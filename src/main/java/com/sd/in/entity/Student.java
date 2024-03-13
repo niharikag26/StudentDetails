@@ -14,16 +14,18 @@ public class Student {
 	private String name;
 	private String email;
 	private int age;
+	private String majorsub;
 	public Student() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	public Student(int id, String name, String email, int age) {
+	public Student(int id, String name, String email, int age, String majorsub ) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.email = email;
 		this.age = age;
+		this.majorsub = majorsub;
 	}
 	public int getId() {
 		return id;
@@ -49,7 +51,10 @@ public class Student {
 	public void setAge(int age) {
 		this.age = age;
 	}
-	
-	
-
+	public String getMajorsub() {
+		return majorsub;
+	}
+	public void setMajorsub(String majorsub) {
+		this.majorsub = majorsub;
+	}
 }
